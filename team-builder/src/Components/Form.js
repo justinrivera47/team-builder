@@ -5,12 +5,29 @@ const Form = (props) => {
     <form>
       <label>
         <input 
-            placeholder="name"
+            placeholder="enter name"
             value={values.name} 
             name="name"
             onChange={handleChange}
         />
       </label>
+      <label>Email
+        <input 
+            placeholder="enter email"
+            value={values.email} 
+            name="email"
+            onChange={handleChange}
+        />
+      </label>
+      <label>Role
+        <input 
+            placeholder="enter role"
+            value={values.role} 
+            name="role"
+            onChange={handleChange}
+        />
+      </label>
+      <input type="submit" value="Create your team!" />
     </form>
   )
 }
